@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Code2, CoffeeIcon, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 import OpenAI from 'openai';
+import CodeEditor from './code-editor';
 
 const languages = ['JavaScript', 'Python', 'Java', 'C++', 'Ruby'];
 
@@ -39,7 +40,7 @@ export default function AICodeConverter() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-600 via-indigo-700 to-purple-800 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 flex flex-col">
       <main className="flex-grow flex items-center justify-center p-8 sm:p-8">
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
@@ -77,14 +78,14 @@ export default function AICodeConverter() {
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <label htmlFor="inputCode" className="block text-sm font-medium text-blue-200">Input Code</label>
-              <textarea
+            <CodeEditor onChangeCode={setInputCode} inputCode={inputCode} showCodeSwitcher={true} />
+              {/* <textarea
                 id="inputCode"
                 className="w-full h-64 bg-white bg-opacity-20 border border-white border-opacity-20 rounded-lg p-3 text-white placeholder-blue-200 resize-none transition-all duration-300 hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-blue-300"
                 placeholder="Enter code here"
                 value={inputCode}
                 onChange={(e) => setInputCode(e.target.value)}
-              />
+              /> */}
             </motion.div>
             <motion.div 
               className="space-y-2"
@@ -92,14 +93,14 @@ export default function AICodeConverter() {
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <label htmlFor="outputCode" className="block text-sm font-medium text-blue-200">Output Code</label>
-              <textarea
+            <CodeEditor onChangeCode={setInputCode} inputCode={outputCode} showCodeSwitcher={false} />
+              {/* <textarea
                 id="outputCode"
                 className="w-full h-64 bg-white bg-opacity-20 border border-white border-opacity-20 rounded-lg p-3 text-white placeholder-blue-200 resize-none"
                 placeholder="Converted code will appear here"
                 value={outputCode}
                 readOnly
-              />
+              /> */}
             </motion.div>
           </div>
 

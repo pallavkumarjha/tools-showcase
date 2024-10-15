@@ -10,6 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@codemirror/lang-css": "^6.3.0",
+    "@codemirror/lang-html": "^6.4.9",
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@codemirror/lang-python": "^6.1.6",
+    "@uiw/codemirror-theme-vscode": "^4.23.5",
+    "@uiw/react-codemirror": "^4.23.5",
     "framer-motion": "^11.11.8",
     "lucide-react": "^0.344.0",
     "openai": "^4.67.3",
