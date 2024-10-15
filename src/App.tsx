@@ -171,7 +171,7 @@ export default function ToolShowcase() {
                             <li className="flex items-center">
                               <Check className="h-5 w-5 text-green-500" />
                               <span className="ml-3 text-gray-500 dark:text-gray-400">
-                                Community support
+                                Email support
                               </span>
                             </li>
                           </ul>
