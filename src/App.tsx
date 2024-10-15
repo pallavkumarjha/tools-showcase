@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { Search, Moon, Sun, ExternalLink, Check } from 'lucide-react'
+import { Search, Moon, Sun, ExternalLink, Check, CoffeeIcon } from 'lucide-react'
 import { Analytics } from "@vercel/analytics/react"
 
 const tools = [
@@ -228,6 +228,20 @@ export default function ToolShowcase() {
             </div>
           </div>
         </main>
+        <footer className="bg-gray-900 text-white mt-12">
+        <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+          <p className="text-center text-sm">
+            &copy; 2024 AI Code Converter. All rights reserved.
+          </p>
+          <button
+            onClick={() => window.open('https://buymeacoffee.com/pallavjha', '_blank')}
+            className="inline-flex items-center px-4 py-2 text-sm bg-transparent hover:bg-white hover:bg-opacity-10 rounded-md transition-all duration-200 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300"
+          >
+            <CoffeeIcon style={{ marginRight: '12px' }} />
+            Buy Me a Coffee
+          </button>
+        </div>
+      </footer>
       </div>
     </div>
   )
