@@ -45,7 +45,7 @@ export default function AICodeConverter() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="w-full max-w-4xl bg-white bg-opacity-10 backdrop-blur-lg rounded-xl shadow-2xl p-6 sm:p-8 border border-white border-opacity-20"
+          className="w-full w-4/5 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl shadow-2xl p-6 sm:p-8 border border-white border-opacity-20"
         >
           <motion.h1 
             className="text-3xl sm:text-4xl font-bold mb-6 text-center flex items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300"
