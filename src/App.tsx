@@ -231,7 +231,7 @@ export default function ToolShowcase() {
         <footer className="bg-gray-900 text-white mt-12">
         <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
           <p className="text-center text-sm">
-            &copy; 2024 AI Code Converter. All rights reserved.
+            &copy; 2024 Tools showcase. No rights reserved.
           </p>
           <button
             onClick={() => window.open('https://buymeacoffee.com/pallavjha', '_blank')}
