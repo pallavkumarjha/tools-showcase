@@ -40,7 +40,7 @@ export default function AICodeConverter() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-600 via-indigo-700 to-purple-800 flex flex-col">
-      <main className="flex-grow flex items-center justify-center p-4 sm:p-8">
+      <main className="flex-grow flex items-center justify-center p-8 sm:p-8">
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
