@@ -79,13 +79,6 @@ export default function AICodeConverter() {
               transition={{ duration: 0.5 }}
             >
             <CodeEditor onChangeCode={setInputCode} inputCode={inputCode} showCodeSwitcher={true} />
-              {/* <textarea
-                id="inputCode"
-                className="w-full h-64 bg-white bg-opacity-20 border border-white border-opacity-20 rounded-lg p-3 text-white placeholder-blue-200 resize-none transition-all duration-300 hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-blue-300"
-                placeholder="Enter code here"
-                value={inputCode}
-                onChange={(e) => setInputCode(e.target.value)}
-              /> */}
             </motion.div>
             <motion.div 
               className="space-y-2"
@@ -94,13 +87,6 @@ export default function AICodeConverter() {
               transition={{ duration: 0.5 }}
             >
             <CodeEditor onChangeCode={setInputCode} inputCode={outputCode} showCodeSwitcher={false} />
-              {/* <textarea
-                id="outputCode"
-                className="w-full h-64 bg-white bg-opacity-20 border border-white border-opacity-20 rounded-lg p-3 text-white placeholder-blue-200 resize-none"
-                placeholder="Converted code will appear here"
-                value={outputCode}
-                readOnly
-              /> */}
             </motion.div>
           </div>
 
@@ -136,6 +122,8 @@ export default function AICodeConverter() {
               {isLoading ? 'Converting...' : 'Convert Code'}
             </motion.button>
           </div>
+          <label className="block text-sm text-blue-100 text-center mt-8">The AI can make mistakes, please use your judgement</label>
+
         </motion.div>
       </main>
 
