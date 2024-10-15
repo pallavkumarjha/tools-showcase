@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { Search, Moon, Sun, ExternalLink, Check } from 'lucide-react'
+import { Analytics } from "@vercel/analytics/react"
 
 const tools = [
   { id: 1, name: 'JSON Formatter', description: 'Format and validate your JSON with ease', icon: '🔧', url: 'https://ai-json.vercel.app/' },
@@ -180,6 +181,7 @@ export default function ToolShowcase() {
                         </div>
                       </div>
                     </motion.div>
+                    <Analytics />
 
                     {/* <motion.div
                       initial={{ opacity: 0, y: 20 }}
