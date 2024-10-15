@@ -8,7 +8,7 @@ const tools = [
   { id: 2, name: 'Code Converter', description: 'Convert code between different programming languages', icon: '🐼', url: 'https://ai-codeswitch.vercel.app/' },
   { id: 3, name: 'Regex Generator', description: 'Generate regular expressions for your needs', icon: '🧬', url: 'https://ai-reg.vercel.app/' },
   { id: 4, name: 'Prompt Generator', description: 'Create engaging prompts for AI models', icon: '💡', url: 'https://ai-prompt-gen.vercel.app/' },
-  { id: 5, name: 'Color Palette Generator', description: 'Generate beautiful color palettes for your projects', icon: '🎨', url: 'https://www.coolorbrew.art/' },
+  { id: 5, name: 'Color Palette Generator', description: 'Generate beautiful color palettes for your projects', icon: '🎨', url: 'https://www.coolorbrew.art/', madeByFriend: true },
   // { id: 6, name: 'Markdown Editor', description: 'Write and preview Markdown in real-time', icon: '📝', url: '/markdown-editor' },
   // { id: 7, name: 'Image Optimizer', description: 'Optimize your images for web performance', icon: '🖼️', url: '/image-optimizer' },
   // { id: 8, name: 'CSS Flexbox Generator', description: 'Generate and visualize CSS Flexbox layouts', icon: '📏', url: '/flexbox-generator' },
@@ -107,6 +107,11 @@ export default function ToolShowcase() {
                       <a href={tool.url} target='_blank' className="block h-full">
                         <div className="bg-white dark:bg-gray-800 overflow-hidden shadow-lg rounded-lg hover:shadow-xl transition-all duration-300 group h-full flex flex-col">
                           <div className="p-6 flex-grow">
+                            {tool?.madeByFriend && (
+                              <div className="absolute top-0 right-0 bg-yellow-100 text-yellow-800 pl-2 pr-1 text-center text-xs rounded-bl-lg">
+                                Made by a friend!
+                              </div>
+                            )}
                             <div className="flex items-start">
                               <div className="flex-shrink-0 text-5xl group-hover:scale-110 transition-transform duration-300">{tool.icon}</div>
                               <div className="ml-4">
