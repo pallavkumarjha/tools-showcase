@@ -4,11 +4,13 @@ import { Search, Moon, Sun, ExternalLink, Check, CoffeeIcon } from 'lucide-react
 import { Analytics } from "@vercel/analytics/react"
 
 const tools = [
-  { id: 1, name: 'JSON Formatter', description: 'Format and validate your JSON with ease', icon: '🔧', url: 'https://ai-json.vercel.app/' },
+  { id: 1, name: 'JSON Formatter', description: 'Format and validate your JSON with ease', icon: '🔧', url: 'https://json.baby/' },
   { id: 2, name: 'Code Converter', description: 'Convert code between different programming languages', icon: '🐼', url: 'https://ai-codeswitch.vercel.app/' },
   { id: 3, name: 'Regex Generator', description: 'Generate regular expressions for your needs', icon: '🧬', url: 'https://ai-reg.vercel.app/' },
-  { id: 4, name: 'Prompt Generator', description: 'Create engaging prompts for AI models', icon: '💡', url: 'https://ai-prompt-gen.vercel.app/' },
-  { id: 5, name: 'Color Palette Generator', description: 'Generate beautiful color palettes for your projects', icon: '🎨', url: 'https://www.coolorbrew.art/', madeByFriend: true },
+  { id: 4, name: 'Color Palette Generator', description: 'Generate beautiful color palettes for your projects', icon: '🎨', url: 'https://www.colorbrew.art/', madeByFriend: true },
+  { id: 5, name: 'Prompt Generator', description: 'Create engaging prompts for AI models', icon: '💡', url: 'https://ai-prompt-gen.vercel.app/' },
+  { id: 6, name: 'Bedtime story', description: 'Generate bedtime stories for your kids and let AI read it to them', icon: '👶', url: 'https://plotsmith.vercel.app/' },
+  { id: 7, name: 'Image to Notes', description: 'Convert images to notes seamlessly and export as PDF', icon: '📝', url: 'https://image-notes.vercel.app/' },
   // { id: 6, name: 'Markdown Editor', description: 'Write and preview Markdown in real-time', icon: '📝', url: '/markdown-editor' },
   // { id: 7, name: 'Image Optimizer', description: 'Optimize your images for web performance', icon: '🖼️', url: '/image-optimizer' },
   // { id: 8, name: 'CSS Flexbox Generator', description: 'Generate and visualize CSS Flexbox layouts', icon: '📏', url: '/flexbox-generator' },
@@ -53,12 +55,12 @@ export default function ToolShowcase() {
                 <button onClick={scrollToPricing} className="text-gray-500 dark:text-gray-300 hover:text-rose-500 dark:hover:text-rose-400 transition-colors duration-200">
                   Pricing
                 </button>
-                <button
+                {/* <button
                   onClick={() => setIsDarkMode(!isDarkMode)}
                   className="bg-gray-200 dark:bg-gray-700 p-1 rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500 transition-colors duration-200"
                 >
                   {isDarkMode ? <Sun className="h-6 w-6" /> : <Moon className="h-6 w-6" />}
-                </button>
+                </button> */}
               </div>
             </div>
           </nav>
@@ -96,7 +98,7 @@ export default function ToolShowcase() {
               </div>
 
               <div className="mt-10">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                   {filteredTools.map((tool, index) => (
                     <motion.div
                       key={tool.id}
