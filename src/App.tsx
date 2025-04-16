@@ -10,7 +10,7 @@ const tools = [
   { id: 4, name: 'Color Palette Generator', description: 'Generate beautiful color palettes for your projects', icon: '🎨', url: 'https://www.colorbrew.art/', madeByFriend: true },
   { id: 5, name: 'Prompt Generator', description: 'Create engaging prompts for AI models', icon: '💡', url: 'https://ai-prompt-gen.vercel.app/' },
   { id: 6, name: 'Bedtime story', description: 'Generate bedtime stories for your kids and let AI read it to them', icon: '👶', url: 'https://plotsmith.vercel.app/' },
-  { id: 7, name: 'Image to Notes', description: 'Convert images to notes seamlessly and export as PDF', icon: '📝', url: 'https://image-notes.vercel.app/' },
+  // { id: 7, name: 'Image to Notes', description: 'Convert images to notes seamlessly and export as PDF', icon: '📝', url: 'https://image-notes.vercel.app/' },
   // { id: 6, name: 'Markdown Editor', description: 'Write and preview Markdown in real-time', icon: '📝', url: '/markdown-editor' },
   // { id: 7, name: 'Image Optimizer', description: 'Optimize your images for web performance', icon: '🖼️', url: '/image-optimizer' },
   // { id: 8, name: 'CSS Flexbox Generator', description: 'Generate and visualize CSS Flexbox layouts', icon: '📏', url: '/flexbox-generator' },
